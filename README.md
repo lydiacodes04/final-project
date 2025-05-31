@@ -11,3 +11,5 @@ Two main features:
 
 Data presentation:
 I am open to your suggestions; ideally I would like for data to be presented in cards AND on a map with markers.
+
+This is a test. I want to see if I am now writing in the stage-1-frontend-and-api branch. ******
