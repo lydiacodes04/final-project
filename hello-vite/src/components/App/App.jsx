@@ -17,6 +17,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/saved-resources" element={<SavedResources />} />
+        <Route path="*" element={<Main />} />
+      </Routes>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -33,5 +38,3 @@ function App() {
 }
 
 export default App;
-
-// committed to commits 6/2
