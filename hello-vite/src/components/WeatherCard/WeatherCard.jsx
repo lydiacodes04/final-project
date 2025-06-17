@@ -1,8 +1,7 @@
 import "./WeatherCard.css";
-import rectangle from "../../assets/rectangle.png";
+// import rectangle from "../../assets/rectangle.png";
 import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
 import React, { useContext } from "react";
-
 function WeatherCard({ weatherData }) {
   const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
   const temp = weatherData?.temp?.[currentTemperatureUnit] || 999;

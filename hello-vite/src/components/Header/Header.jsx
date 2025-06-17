@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import union from "../../assets/union.svg";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import "./Header.css";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
@@ -21,7 +21,7 @@ function Header({
   return (
     <header className="header">
       <Link to="/">
-        <img className="header__logo" src={logo} alt="wtwr logo" />
+        <img className="header__logo" src={union} alt="wtwr logo" />
       </Link>
       <p className="header__date-and-location">
         {currentDate}, {weatherData.city}

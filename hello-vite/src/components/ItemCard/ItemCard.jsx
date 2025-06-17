@@ -1,6 +1,6 @@
 import "./ItemCard.css";
-import cardHeartDefault from "../../assets/heart-default.svg";
-import cardHeartLiked from "../../assets/heart-liked.svg";
+// import cardHeartDefault from "../../assets/heart-default.svg";
+// import cardHeartLiked from "../../assets/heart-liked.svg";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import React, { useContext } from "react";
 
