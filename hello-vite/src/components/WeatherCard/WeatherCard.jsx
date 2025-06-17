@@ -1,5 +1,5 @@
 import "./WeatherCard.css";
-// import rectangle from "../../assets/rectangle.png";
+import union from "../../assets/union.svg";
 import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
 import React, { useContext } from "react";
 function WeatherCard({ weatherData }) {
@@ -12,7 +12,7 @@ function WeatherCard({ weatherData }) {
         {temp} &deg; {currentTemperatureUnit}{" "}
       </p>
       <img
-        src={rectangle}
+        src={union}
         alt="weather background image"
         className="weather-card__image"
       />
