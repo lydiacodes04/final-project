@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 32px 0px 28px;
+  font-family: Cabinet Grotesk, sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 24px;
+  text-align: left;
+  border-bottom: 1px solid red;
+}
+
+.header__logo {
+  margin-right: 24px;
+}
+
+.header__date-and-location {
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.header__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.header__add-clothes-btn {
+  border: none;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.header__link {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.header__username {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.header__avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.header__sign-up {
+  border: none;
+  font-family: Cabinet Grotesk, sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.header__log-in {
+  border: none;
+  font-family: Cabinet Grotesk, sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 24px;
+  white-space: nowrap;
+}
