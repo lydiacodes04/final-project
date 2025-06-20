@@ -160,7 +160,7 @@ function App() {
       <ItemModal
         activeModal={activeModal}
         onClose={closeActiveModal}
-        card={selectedCard}
+        // card={selectedCard}
       />
       {/* <EditProfileModal
           activeModal={activeModal}
