@@ -13,7 +13,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import ItemModal from "../ItemModal/ItemModal";
 import Footer from "../Footer/Footer";
-import Profile from "../Profile/Profile";
+// import Profile from "../Profile/Profile";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 // import ProtectedRoute from "../ProtectedRoute";
 // import { getYouthPrograms } from "../../utils/api";
@@ -127,15 +127,15 @@ function App() {
               />
             }
           />
-          <Route
+          {/* <Route
             path="/profile"
             element={
               <Profile
                 onCardClick={handleCardClick}
-                // clothingItems={clothingItems}
+                clothingItems={clothingItems}
               />
             }
-          />
+          /> */}
         </Routes>
 
         <Footer />
@@ -160,7 +160,7 @@ function App() {
       <ItemModal
         activeModal={activeModal}
         onClose={closeActiveModal}
-        // card={selectedCard}
+        card={selectedCard}
       />
       {/* <EditProfileModal
           activeModal={activeModal}

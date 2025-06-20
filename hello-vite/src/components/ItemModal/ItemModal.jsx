@@ -3,8 +3,7 @@ import close from "../../assets/close_icon.svg";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 // import { useContext } from "react";
 
-function ItemModal({ activeModal, onClose }) {
-  //"card" was passed to ItemModal in the WTWR version
+function ItemModal({ activeModal, onClose, card }) {
   // const currentUser = useContext(CurrentUserContext);
 
   // Creating a variable which you'll then set in `className` for the delete button
@@ -15,7 +14,7 @@ function ItemModal({ activeModal, onClose }) {
         <button onClick={onClose} type="button" className="modal__close">
           <img src={close} alt="close button" className="modal__close-btn" />
         </button>
-        {/* <img src={card.imageUrl} alt={card.name} className="modal__image" /> */}
+        <img src={card.imageUrl} alt={card.name} className="modal__image" />
         <div className="modal__footer">
           <h2 className="modal__caption"> {card.name} </h2>
           {/* <p className="modal__weather">Weather: {card.weather}</p> */}
