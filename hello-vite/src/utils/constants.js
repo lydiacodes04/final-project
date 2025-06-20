@@ -2,11 +2,11 @@ export const coordinates = {
   latitude: 29.424122,
   longitude: -98.493629,
 };
-export const APIkey = "a562052a9800bf432ffc60528926e77f";
+// export const APIkey =
+//   "hdHzTV/cG6SGUXPQXV1HK1NTe/82onzB29HqTcxwC6pSxL32cJ5k2K1SmWfB3Pg/E5TQ8QKoh0Qh1ZN1WvdjUw==";
 
 const baseUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://api.wtwr4me.justlearning.net"
-    : "http://localhost:3001";
+  "https://api.careeronestop.org/v1/youthprogramfinder/zljxkfcsnnNOrxg?enableMetaData=true";
 
+// userId: "zljxkfcsnnNOrxg"
 export { baseUrl };

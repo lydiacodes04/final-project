@@ -2,7 +2,8 @@ import { baseUrl } from "./constants";
 
 const getHeaders = () => ({
   "Content-Type": "application/json",
-  Authorization: "Bearer " + localStorage.getItem("jwt"),
+  APIkey:
+    "hdHzTV/cG6SGUXPQXV1HK1NTe/82onzB29HqTcxwC6pSxL32cJ5k2K1SmWfB3Pg/E5TQ8QKoh0Qh1ZN1WvdjUw==",
 });
 
 function checkResponse(res) {
@@ -13,53 +14,19 @@ function checkResponse(res) {
 }
 export { checkResponse };
 
-function getItems() {
-  return fetch(`${baseUrl}/items`, {
+function getYouthPrograms(zipcode) {
+  return fetch(`${baseUrl}&location=${zipcode}`, {
     headers: getHeaders(),
   }).then(checkResponse);
 }
 
-export { getItems };
+export { getYouthPrograms };
 
-//CARD ROUTE: create a card (POST)
-function postItems(name, imageUrl, weather) {
-  return fetch(`${baseUrl}/items`, {
-    method: "POST",
-    headers: getHeaders(),
-    body: JSON.stringify({
-      name,
-      imageUrl,
-      weather,
-    }),
-  }).then(checkResponse);
-}
-
-export { postItems };
-
-//  Delete card:
-function deleteItem(item) {
-  return fetch(`${baseUrl}/items/${item._id}`, {
-    method: "DELETE",
-    headers: getHeaders(),
-  }).then(checkResponse);
-}
-
-export { deleteItem };
-
-function addCardLike(id) {
-  return fetch(`${baseUrl}/items/${id}/likes`, {
-    method: "PUT",
-    headers: getHeaders(),
-  }).then(checkResponse);
-}
-
-export { addCardLike };
-
-function removeCardLike(id) {
-  return fetch(`${baseUrl}/items/${id}/likes`, {
-    method: "DELETE",
-    headers: getHeaders(),
-  }).then(checkResponse);
-}
-
-export { removeCardLike };
+// export const filterProgramData = (data) => {
+//   //   const result = {};
+//   //   result.zipcode = data.zipcode;
+//   if ((data.city = "San Antonio")) {
+//     return data;
+//   }
+//   return "not found";
+// };
