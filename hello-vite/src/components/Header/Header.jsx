@@ -31,7 +31,7 @@ function Header() {
         <div className="header__nav">
           {
             <>
-              <button> + Add Clothes</button>
+              <button> + Button </button>
               <Link to="/profile" className="header__link">
                 <p className="header__username">Username Placeholder </p>
                 <img className="header__avatar" src={union} alt="avatar" />

@@ -18,6 +18,7 @@ function Main({
     <main>
       {/* <WeatherCard weatherData={weatherData} /> */}
       <section className="cards">
+        <p className="search_bar">Search bar</p>
         <p className="cards__text">
           Search for resources near you. Imagine cards appearing here. there
           would be maybe 6 to start out with and then more if you click "show
