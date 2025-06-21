@@ -3,13 +3,23 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: 32px 0px 28px;
+  /* margin: 32px 0px 28px; */
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 18px;
   font-weight: 550;
   line-height: 24px;
   text-align: left;
   border-bottom: 1px solid red;
+}
+
+.header_background {
+  width: 100%;
+  background-image: url("../../assets/skyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px; /* Example height */
+  z-index: 0;
 }
 
 .header__logo {
