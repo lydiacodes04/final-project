@@ -18,7 +18,11 @@ function Main({
     <main>
       {/* <WeatherCard weatherData={weatherData} /> */}
       <section className="cards">
-        <p className="cards__text">Search for resources near you.</p>
+        <p className="cards__text">
+          Search for resources near you. Imagine cards appearing here. there
+          would be maybe 6 to start out with and then more if you click "show
+          more"{" "}
+        </p>
         {/* <ul className="cards__list">
           {clothingItems
             .filter((item) => {

@@ -13,7 +13,11 @@
 }
 
 .header__logo {
-  margin-right: 24px;
+  /* margin-right: 24px; */
+  /* width: 50%;
+  height: 50%; */
+  width: 150px;
+  height: 150px;
 }
 
 .header__date-and-location {
@@ -21,6 +25,7 @@
   text-align: left;
   text-decoration: none;
   flex-grow: 1;
+  color: #000;
 }
 
 .header__controls {
