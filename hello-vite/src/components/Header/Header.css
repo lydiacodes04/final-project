@@ -1,5 +1,5 @@
 .header {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -9,23 +9,10 @@
   line-height: 24px;
   text-align: left;
   border-bottom: 1px solid red;
-  /* background-image: url("../../assets/skyline.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; */
-}
-
-.header_background {
-  width: 100%;
 }
 
 .header__logo {
-  /* margin-bottom: 200px; */
-  /* width: 50%;
-  height: 50%;
-  width: 150px;
-  height: 150px; */
+  margin-right: 2px;
 }
 
 .header__avatar {

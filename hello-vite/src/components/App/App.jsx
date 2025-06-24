@@ -11,7 +11,7 @@ import "./App.css";
 // import { coordinates } from "../../utils/constants";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
-import ItemModal from "../ItemModal/ItemModal";
+// import ItemModal from "../ItemModal/ItemModal";
 import Footer from "../Footer/Footer";
 // import Profile from "../Profile/Profile";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
@@ -20,8 +20,8 @@ import Footer from "../Footer/Footer";
 
 function App() {
   // const [zipcode, setZipcode] = useState({});
-  const [activeModal, setActiveModal] = useState("");
-  const [selectedCard, setSelectedCard] = useState({});
+  // const [activeModal, setActiveModal] = useState("");
+  // const [selectedCard, setSelectedCard] = useState({});
   // const [clothingItems, setClothingItems] = useState([]);
   // const [programData, setProgramData] = useState([]);
   // const zipcode = "78218";
@@ -49,14 +49,14 @@ function App() {
   //     .catch((err) => console.error("Error setting data:", err));
   // };
 
-  const handleCardClick = (card) => {
-    setActiveModal("preview");
-    setSelectedCard(card);
-  };
+  // const handleCardClick = (card) => {
+  //   setActiveModal("preview");
+  //   setSelectedCard(card);
+  // };
 
-  const closeActiveModal = () => {
-    setActiveModal("");
-  };
+  // const closeActiveModal = () => {
+  //   setActiveModal("");
+  // };
 
   // const submitEditProfile = ({ name, avatar }) => {
   //   updateProfile(name, avatar)
@@ -121,9 +121,9 @@ function App() {
             path="/"
             element={
               <Main
-                // weatherData={weatherData}
-                onCardClick={handleCardClick}
-                // clothingItems={clothingItems}
+              // weatherData={weatherData}
+              // onCardClick={handleCardClick}
+              // clothingItems={clothingItems}
               />
             }
           />
@@ -157,11 +157,11 @@ function App() {
           isOpen={activeModal === "add-garment"}
           onAddItem={handleAddItemSubmit}
         /> */}
-      <ItemModal
+      {/* <ItemModal
         activeModal={activeModal}
         onClose={closeActiveModal}
         card={selectedCard}
-      />
+      /> */}
       {/* <EditProfileModal
           activeModal={activeModal}
           isOpen={activeModal === "edit-profile"}

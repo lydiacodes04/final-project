@@ -1,9 +1,11 @@
 import "./Main.css";
-import WeatherCard from "../WeatherCard/WeatherCard";
-import ItemCard from "../ItemCard/ItemCard";
-import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
-import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+// import WeatherCard from "../WeatherCard/WeatherCard";
+// import ItemCard from "../ItemCard/ItemCard";
+// import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
+// import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import React, { useContext } from "react";
+import github from "../../assets/github.svg";
+// import SearchField from "../../assets/SearchField.svg";
 
 function Main({
   // weatherData,
@@ -17,13 +19,26 @@ function Main({
   return (
     <main>
       {/* <WeatherCard weatherData={weatherData} /> */}
-      <section className="cards">
+      <section className="search">
         <p className="search_bar">Search bar</p>
-        <p className="cards__text">
+        <form>
+          <input className="search_fieldset" type="text"></input>
+        </form>
+        <img
+          className="search__bar"
+          src={github}
+          alt="creator: Lydia Lockhart"
+        />
+        <button className="search_button"> SEARCH </button>
+
+        <p className="search__text">
           Search for resources near you. Imagine cards appearing here. there
           would be maybe 6 to start out with and then more if you click "show
-          more"{" "}
+          more"
+          <button>Show more</button>
         </p>
+      </section>
+      <section className="cards">
         {/* <ul className="cards__list">
           {clothingItems
             .filter((item) => {
