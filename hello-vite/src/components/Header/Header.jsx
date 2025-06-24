@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import union from "../../assets/Union.svg";
 import skyline from "../../assets/skyline.jpg";
 import chicken from "../../assets/chicken.jpg";
+import NewsExplorer from "../../assets/NewsExplorer.svg";
 import "./Header.css";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 // import { useContext } from "react";
@@ -13,19 +13,18 @@ function Header() {
 
   return (
     <header className="header">
-      <img
+      {/* <img
         className="header_background"
         src={skyline}
         alt="San Antonio skyline"
-      />
+      /> */}
 
       <Link to="/">
         {/* <img
           className="header__logo"
-          src={chicken}
+          src={NewsExplorer}
           alt="creator: Lydia Lockhart"
         /> */}
-        {/* <img className="header__logo" src={union} alt="wtwr logo" /> */}
         {/* Photo by <a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
          */}
       </Link>

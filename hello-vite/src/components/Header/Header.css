@@ -3,32 +3,30 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* margin: 32px 0px 28px; */
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 18px;
   font-weight: 550;
   line-height: 24px;
   text-align: left;
   border-bottom: 1px solid red;
+  /* background-image: url("../../assets/skyline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; */
 }
 
 .header_background {
   width: 100%;
-  background-image: url("../../assets/skyline.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  z-index: -1;
 }
 
-/* .header__logo {
-  margin-right: 24px;
-  width: 50%;
+.header__logo {
+  /* margin-bottom: 200px; */
+  /* width: 50%;
   height: 50%;
   width: 150px;
-  height: 150px;
-} */
+  height: 150px; */
+}
 
 .header__avatar {
   height: 50px;
