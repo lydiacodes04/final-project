@@ -1,8 +1,21 @@
 .search_bar {
-  color: #000;
+  /* width: 608;
+  height: 64;
+  top: 432px;
+  left: 416px;
+  border-width: 1px;
+  color: #d1d2d6; */
+}
+.search_fieldset {
+  /* border-radius: 75%; */
+  width: 608;
+  height: 64;
+  top: 432px;
+  left: 416px;
+  border: 1px, #d1d2d6;
 }
 .search_button {
-  /* border-radius: 75%; */
+  border-radius: 75%;
   color: blue;
 }
 

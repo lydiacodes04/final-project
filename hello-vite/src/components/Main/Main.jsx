@@ -6,12 +6,15 @@ import "./Main.css";
 import React, { useContext } from "react";
 import github from "../../assets/github.svg";
 // import SearchField from "../../assets/SearchField.svg";
+import ToggleSwitch from "../ToggleSwitch";
 
-function Main({
-  // weatherData,
-  onCardClick,
-  // clothingItems,
-}) {
+function Main(
+  {
+    // weatherData,
+    // onCardClick,
+    // clothingItems,
+  }
+) {
   // const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
   // const temp = weatherData?.temp?.[currentTemperatureUnit] || 999;
   // const { currentUser } = useContext(CurrentUserContext);
@@ -20,22 +23,24 @@ function Main({
     <main>
       {/* <WeatherCard weatherData={weatherData} /> */}
       <section className="search">
-        <p className="search_bar">Search bar</p>
-        <form>
-          <input className="search_fieldset" type="text"></input>
+        <form action="" className="search_bar">
+          <input
+            className="search_fieldset"
+            type="text"
+            placeholder="search anything"
+          ></input>
+
+          <button className="search_button" type="submit">
+            SEARCH
+          </button>
         </form>
-        <img
-          className="search__bar"
-          src={github}
-          alt="creator: Lydia Lockhart"
-        />
-        <button className="search_button"> SEARCH </button>
 
         <p className="search__text">
           Search for resources near you. Imagine cards appearing here. there
           would be maybe 6 to start out with and then more if you click "show
           more"
           <button>Show more</button>
+          <ToggleSwitch />
         </p>
       </section>
       <section className="cards">
