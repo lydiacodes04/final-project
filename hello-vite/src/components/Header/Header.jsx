@@ -18,16 +18,18 @@ function Header() {
         src={skyline}
         alt="San Antonio skyline"
       />
+
       <Link to="/">
-        <img
+        {/* <img
           className="header__logo"
           src={chicken}
           alt="creator: Lydia Lockhart"
-        />
+        /> */}
         {/* <img className="header__logo" src={union} alt="wtwr logo" /> */}
         {/* Photo by <a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
          */}
       </Link>
+
       <p className="header__date-and-location">
         {" "}
         date and location were here
@@ -40,7 +42,7 @@ function Header() {
               <button> + Button </button>
               <Link to="/profile" className="header__link">
                 <p className="header__username">Username Placeholder </p>
-                <img className="header__avatar" src={union} alt="avatar" />
+                <img className="header__avatar" src={chicken} alt="avatar" />
               </Link>
             </>
           }
