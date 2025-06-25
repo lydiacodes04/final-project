@@ -6,7 +6,6 @@ import "./Main.css";
 import React, { useContext } from "react";
 import github from "../../assets/github.svg";
 // import SearchField from "../../assets/SearchField.svg";
-import ToggleSwitch from "../ToggleSwitch";
 
 function Main(
   {
@@ -40,7 +39,6 @@ function Main(
           would be maybe 6 to start out with and then more if you click "show
           more"
           <button>Show more</button>
-          <ToggleSwitch />
         </p>
       </section>
       <section className="cards">
