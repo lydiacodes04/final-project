@@ -4,42 +4,53 @@ import "./ItemCard.css";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import React, { useContext } from "react";
 
-function ItemCard({ item, onCardClick, onCardLike }) {
-  const currentUser = useContext(CurrentUserContext);
+function ItemCard({ resource }) {
+  // const currentUser = useContext(CurrentUserContext);
 
-  const handleCardClick = () => {
-    onCardClick(item);
-  };
+  // const handleCardClick = () => {
+  //   onCardClick(item);
+  // };
 
-  const handleLike = () => {
-    if (currentUser._id === item.owner) {
-      onCardLike(item._id, isLiked);
-    } else {
-      console.log("Not your item");
-    }
-  };
+  // const handleLike = () => {
+  //   if (currentUser._id === item.owner) {
+  //     onCardLike(item._id, isLiked);
+  //   } else {
+  //     console.log("Not your item");
+  //   }
+  // };
 
-  const isLiked = item.likes
-    ? item.likes.some((id) => id === currentUser._id)
-    : false;
+  // const isLiked = item.likes
+  //   ? item.likes.some((id) => id === currentUser._id)
+  //   : false;
 
-  const cardHeartClassName = `card__heart`;
+  // const cardHeartClassName = `card__heart`;
 
   return (
-    <li className="card">
-      <h2 className="card__name">{item.name}</h2>
-      <img
+    <li className="resource">
+      <h2 className="resource__name">{resource.Name}</h2>
+      <h2 className="resource_address">
+        {
+          (resource.Address1,
+          resource.Address2,
+          resource.City,
+          resource.StateAbbrev,
+          resource.Zip)
+        }
+      </h2>
+      <h2 className="resource_type">{resource.ProgramType}</h2>
+      <h2 className="resource_distance">{resource.Distance}</h2>
+      {/* <img
         className={cardHeartClassName}
         onClick={handleLike}
         src={isLiked ? cardHeartLiked : cardHeartDefault}
         alt="card like button"
-      />
-      <img
+      /> */}
+      {/* <img
         className="card__image"
         onClick={handleCardClick}
         src={item.imageUrl}
         alt={item.name}
-      />
+      /> */}
     </li>
   );
 }

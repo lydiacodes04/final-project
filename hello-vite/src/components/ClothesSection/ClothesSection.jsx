@@ -2,7 +2,7 @@ import ItemCard from "../ItemCard/ItemCard";
 import "./ClothesSection.css";
 import { useContext } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import React from "react";
+// import React from "react";
 
 function ClothesSection({
   onCardClick,

@@ -26,7 +26,7 @@ function Main(
           <input
             className="search_fieldset"
             type="text"
-            placeholder="search anything"
+            placeholder="search for resources"
           ></input>
 
           <button className="search_button" type="submit">
