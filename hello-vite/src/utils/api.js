@@ -15,6 +15,7 @@ function checkResponse(res) {
 export { checkResponse };
 
 function getYouthPrograms(zipcode) {
+  console.log("API URL:", `${baseUrl}&location=${zipcode}`);
   return fetch(`${baseUrl}&location=${zipcode}`, {
     headers: getHeaders(),
   }).then(checkResponse);

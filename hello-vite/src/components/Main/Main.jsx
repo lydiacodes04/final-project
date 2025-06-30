@@ -3,32 +3,22 @@ import "./Main.css";
 import ItemCard from "../ItemCard/ItemCard";
 // import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import github from "../../assets/github.svg";
 // import SearchField from "../../assets/SearchField.svg";
 
-function Main(
-  {
-    // weatherData,
-    // onCardClick,
-    // clothingItems,
-  }
-) {
-  // const { currentTemperatureUnit } = useContext(CurrentTemperatureUnitContext);
-  // const temp = weatherData?.temp?.[currentTemperatureUnit] || 999;
-  // const { currentUser } = useContext(CurrentUserContext);
-
+function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
   return (
     <main>
-      {/* <WeatherCard weatherData={weatherData} /> */}
       <section className="search">
-        <form action="" className="search_bar">
+        <form action="" className="search_bar" onSubmit={onZipSubmit}>
           <input
             className="search_fieldset"
             type="text"
+            value={inputValue}
+            onChange={handleInputChange}
             placeholder="search for resources"
           ></input>
-
           <button className="search_button" type="submit">
             SEARCH
           </button>
@@ -41,26 +31,22 @@ function Main(
           <button>Show more</button>
         </p>
       </section>
-      <section className="cards">
-        {/* <ul className="cards__list">
-          {clothingItems
-            .filter((item) => {
-              return item.weather === weatherData.type;
-            })
+      <ItemCard resource={resource}></ItemCard>
+      {/* <section className="cards"> */}
+      {/* <ul className="cards__list">
+          {resourceItems
             .map((item) => {
               return (
                 <ItemCard
-                  key={item._id}
-                  item={item}
+                resource = {resource}
                   onCardClick={onCardClick}
-                  onCardLike={onCardLike}
-                  isLoggedIn={isLoggedIn}
+                  onCardSave={onCardSave}
                   currentUser={currentUser}
                 />
               );
             })}
         </ul> */}
-      </section>
+      {/* </section> */}
     </main>
   );
 }

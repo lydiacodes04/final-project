@@ -16,10 +16,11 @@ import Footer from "../Footer/Footer";
 // import Profile from "../Profile/Profile";
 // import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 // import ProtectedRoute from "../ProtectedRoute";
-// import { getYouthPrograms } from "../../utils/api";
+import { getYouthPrograms } from "../../utils/api.js";
 
 function App() {
-  // const [zipcode, setZipcode] = useState({});
+  const [zipcode, setZipcode] = useState({});
+  const [resource, setResourceData] = useState([]);
   // const [activeModal, setActiveModal] = useState("");
   // const [selectedCard, setSelectedCard] = useState({});
   // const [clothingItems, setClothingItems] = useState([]);
@@ -37,9 +38,35 @@ function App() {
   //   }
   // }, [location]);
 
-  // const handleZipSubmit = (zipcode) => {
-  //   getYouthPrograms(zipcode);
-  // };
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const onZipSubmit = (e) => {
+    e.preventDefault();
+    const zipcode = inputValue;
+    setZipcode(zipcode);
+    getYouthPrograms(zipcode)
+      .then((data) => {
+        console.log(data);
+        const resource = data;
+        setResourceData(resource);
+
+        return data;
+      })
+      .catch((err) => console.error("Error setting data:", err));
+  };
+
+  // useEffect(() => {
+  //   getLocation(coordinates)
+  //     .then((data) => {
+  //       const filteredData = filterProgramData(data);
+  //       setProgramData(filteredData);
+  //     })
+  //     .catch((err) => console.error("Error getting location data:", err));
+  // }, []);
 
   // const submitZipcode = (zipcode) => {
   //   updateZipcode(zipcode)
@@ -121,9 +148,11 @@ function App() {
             path="/"
             element={
               <Main
-              // weatherData={weatherData}
-              // onCardClick={handleCardClick}
-              // clothingItems={clothingItems}
+                resource={resource}
+                onZipSubmit={onZipSubmit}
+                handleInputChange={handleInputChange}
+                // onCardClick={handleCardClick}
+                // clothingItems={clothingItems}
               />
             }
           />
