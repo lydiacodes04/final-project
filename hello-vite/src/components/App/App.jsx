@@ -28,15 +28,7 @@ function App() {
   // const zipcode = "78218";
 
   // const navigate = useNavigate();
-
   // const location = useLocation();
-
-  // useEffect(() => {
-  //   if (location.state?.showLogin) {
-  //     setActiveModal("login-modal");
-  //     navigate("/", { state: {}, replace: true });
-  //   }
-  // }, [location]);
 
   const [inputValue, setInputValue] = useState("");
 
@@ -58,6 +50,14 @@ function App() {
       })
       .catch((err) => console.error("Error setting data:", err));
   };
+
+  // useEffect((zipcode) => {
+  //   setZipcode(zipcode)
+  //     .then((data) => {
+  //       setResourceData(data);
+  //     })
+  //     .catch((err) => console.error("Error getting items:", err));
+  // }, []);
 
   // useEffect(() => {
   //   getLocation(coordinates)
