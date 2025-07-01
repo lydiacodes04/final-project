@@ -2,9 +2,11 @@ import { baseUrl } from "./constants";
 
 const getHeaders = () => ({
   "Content-Type": "application/json",
-  APIkey:
-    "hdHzTV/cG6SGUXPQXV1HK1NTe/82onzB29HqTcxwC6pSxL32cJ5k2K1SmWfB3Pg/E5TQ8QKoh0Qh1ZN1WvdjUw==",
+  Authorization: `Bearer ${APIToken}`,
 });
+
+const APIToken =
+  "hdHzTV/cG6SGUXPQXV1HK1NTe/82onzB29HqTcxwC6pSxL32cJ5k2K1SmWfB3Pg/E5TQ8QKoh0Qh1ZN1WvdjUw==";
 
 function checkResponse(res) {
   if (res.ok) {
@@ -14,14 +16,23 @@ function checkResponse(res) {
 }
 export { checkResponse };
 
+// function getYouthPrograms(zipcode) {
+//   return fetch(`${baseUrl}&location=${zipcode}`, {
+//     headers: getHeaders(),
+//   }).then(checkResponse);
+// }
+
 function getYouthPrograms(zipcode) {
-  console.log("API URL:", `${baseUrl}&location=${zipcode}`);
-  return fetch(`${baseUrl}&location=${zipcode}`, {
+  const fullUrl = `${baseUrl}&location=${zipcode}`;
+  console.log("API URL:", fullUrl); // Add this line
+  return fetch(fullUrl, {
     headers: getHeaders(),
   }).then(checkResponse);
 }
 
 export { getYouthPrograms };
+
+//`${baseUrl}&location=${zipcode}&APIToken=${encodeURIComponent(APIToken)}`
 
 // export const filterProgramData = (data) => {
 //   //   const result = {};

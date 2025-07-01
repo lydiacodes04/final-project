@@ -1,11 +1,5 @@
 import "./Main.css";
-// import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
-// import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
-// import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-import React, { useContext, useState } from "react";
-import github from "../../assets/github.svg";
-// import SearchField from "../../assets/SearchField.svg";
 
 function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
   return (
@@ -31,22 +25,12 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
           <button>Show more</button>
         </p>
       </section>
-      <ItemCard resource={resource}></ItemCard>
-      {/* <section className="cards"> */}
-      {/* <ul className="cards__list">
-          {resourceItems
-            .map((item) => {
-              return (
-                <ItemCard
-                resource = {resource}
-                  onCardClick={onCardClick}
-                  onCardSave={onCardSave}
-                  currentUser={currentUser}
-                />
-              );
-            })}
-        </ul> */}
-      {/* </section> */}
+      {/* <ItemCard singleResource={singleResource}></ItemCard> */}
+      {resource.map((singleResource) => {
+        return (
+          <ItemCard singleResource={singleResource} key={singleResource.Name} />
+        );
+      })}
     </main>
   );
 }

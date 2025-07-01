@@ -38,15 +38,16 @@ function App() {
 
   const onZipSubmit = (e) => {
     e.preventDefault();
-    const zipcode = inputValue;
-    setZipcode(zipcode);
-    getYouthPrograms(zipcode)
+    setZipcode(inputValue);
+    console.log("Searching for zip:", inputValue);
+    getYouthPrograms(inputValue)
       .then((data) => {
-        console.log(data);
-        const resource = data;
-        setResourceData(resource);
-
-        return data;
+        console.log(data.YouthProgramList.length);
+        const result = data.YouthProgramList.filter(
+          (program) => program.Zip === inputValue
+        );
+        setResourceData(result);
+        console.log(result);
       })
       .catch((err) => console.error("Error setting data:", err));
   };

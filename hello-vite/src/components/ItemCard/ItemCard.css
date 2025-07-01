@@ -1,13 +1,14 @@
-.card {
+.resourceCard {
   position: relative;
   max-width: 323px;
   max-height: 300px;
   display: flex;
   justify-content: center;
   font-family: Cabinet Grotesk, sans-serif;
+  color: #000;
 }
 
-.card__name {
+.resourceCard__name {
   position: absolute;
   top: 15px;
   margin: 0;
@@ -15,13 +16,13 @@
   gap: 8px;
   border-radius: 4px;
   opacity: 0px;
-  color: grey;
+  color: #000;
   font-weight: 500;
   font-size: 12px;
   background-color: #fff;
   align-items: center;
 }
-.card__heart {
+/* .card__heart {
   position: absolute;
   top: 15px;
   right: 5px;
@@ -37,4 +38,4 @@
   width: 100%;
   border: 1px #000;
   border-radius: 19px;
-}
+} */

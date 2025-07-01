@@ -1,36 +1,19 @@
 import "./ItemCard.css";
 
-// import { CurrentUserContext } from "../../contexts/CurrentUserContext";
-// import React, { useContext } from "react";
-
-function ItemCard({ resource }) {
-  // const currentUser = useContext(CurrentUserContext);
-
+function ItemCard({ singleResource }) {
   return (
-    <li className="resource">
-      <h2 className="resource__name">{resource.Name}</h2>
-      <h2 className="resource_address">
-        {resource.Address1},{resource.City},{resource.StateAbbrev},
-        {resource.Zip}
+    <li className="resourceCard">
+      <h2 className="resourceCard__name">{singleResource.Name}</h2>
+      <h2 className="resourceCard__address">
+        {singleResource.Address1},{singleResource.City},
+        {singleResource.StateAbbrev},{singleResource.Zip}
       </h2>
       {/* <h2 className="resource_address">
         {`${resource.Address1}, ${resource.City}, ${resource.StateAbbrev}, ${resource.Zip}`}
       </h2> */}
       {/* Address 2 */},
-      <h2 className="resource_type">{resource.ProgramType}</h2>
-      <h2 className="resource_distance">{resource.Distance}</h2>
-      {/* <img
-        className={cardHeartClassName}
-        onClick={handleLike}
-        src={isLiked ? cardHeartLiked : cardHeartDefault}
-        alt="card like button"
-      /> */}
-      {/* <img
-        className="card__image"
-        onClick={handleCardClick}
-        src={item.imageUrl}
-        alt={item.name}
-      /> */}
+      <h2 className="resourceCard_type">{singleResource.ProgramType}</h2>
+      <h2 className="resourceCard_distance">{singleResource.Distance}</h2>
     </li>
   );
 }
