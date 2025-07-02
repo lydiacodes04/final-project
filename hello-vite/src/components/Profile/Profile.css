@@ -28,4 +28,17 @@
 }
 
 .profile__description {
+  width: 323px;
+  height: 200px;
+  /* max-width: 323px;
+  max-height: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cabinet Grotesk, sans-serif;
+  color: #000;
+  background-color: #0000004d;
+  margin: 20px;
+  padding: 2px 12px 2px 12px;
+  border-radius: 5%;
 }
