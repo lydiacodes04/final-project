@@ -11,7 +11,6 @@ function ItemCard({ singleResource }) {
       {/* <h2 className="resource_address">
         {`${resource.Address1}, ${resource.City}, ${resource.StateAbbrev}, ${resource.Zip}`}
       </h2> */}
-      {/* Address 2 */},
       <h2 className="resourceCard_type">{singleResource.ProgramType}</h2>
       <h2 className="resourceCard_distance">{singleResource.Distance}</h2>
     </li>
