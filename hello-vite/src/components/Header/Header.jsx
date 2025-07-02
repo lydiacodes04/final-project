@@ -1,25 +1,21 @@
 import { Link } from "react-router-dom";
 import chicken from "../../assets/chicken.jpg";
-import NewsExplorer from "../../assets/NewsExplorer.svg";
+import Home from "../../assets/Home.svg";
 import "./Header.css";
 
 // import { useContext } from "react";
 function Header() {
   return (
     <header className="header">
-      <Link to="/">
-        <img className="header__logo" src={NewsExplorer} alt="ResourceFinder" />
-      </Link>
-
       <div className="header__controls">
-        <div className="header__nav">
-          {
-            <Link to="/profile" className="header__link">
-              <p className="header__username"> About </p>
-              <img className="header__avatar" src={chicken} alt="avatar" />
-            </Link>
-          }
-        </div>
+        <Link to="/" className="header__home">
+          <img className="header__home-logo" src={Home} alt="ResourceFinder" />
+        </Link>
+
+        <Link to="/profile" className="header__about">
+          <p className="header__about"> About </p>
+          <img className="header__avatar" src={chicken} alt="avatar" />
+        </Link>
       </div>
     </header>
   );
