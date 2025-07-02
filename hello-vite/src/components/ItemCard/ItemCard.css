@@ -3,7 +3,7 @@
   max-width: 323px;
   max-height: 300px;
   display: flex;
-  flex-direction: row;
+  flex-direction: vertical;
   justify-content: center;
   align-items: center;
   font-family: Cabinet Grotesk, sans-serif;
@@ -31,9 +31,9 @@
   flex-direction: column;
 }
 
-/* .resourceCard_type {
+.resourceCard__type {
   font-size: 12px;
-} */
+}
 /* 
 .resourceCard_distance {
   font-size: 12px;
