@@ -7,25 +7,31 @@
   color: #d1d2d6;
 } */
 .search_fieldset {
-  /* border-radius: 75%; */
+  /* border-radius: 5%; */
   width: 608;
   height: 64;
   top: 432px;
   left: 416px;
-  border: 1px, #d1d2d6;
+  border: 1px solid #d1d2d6;
+  /* background-color: #0000004d; */
 }
-.search_button {
+.search_submit-button {
   border-radius: solid, #000, 1px;
-  color: blue;
+  color: #d1d2d6;
 }
 
-.search_text {
+.search__text {
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 20px;
   font-weight: 550;
   line-height: 24px;
   text-align: left;
   color: #000;
+  background-color: skyblue;
+}
+.search_more-button {
+  border-radius: solid, #000, 1px;
+  color: #d1d2d6;
 }
 
 .cards__list {

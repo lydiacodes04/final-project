@@ -3,9 +3,12 @@
   max-width: 323px;
   max-height: 300px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-family: Cabinet Grotesk, sans-serif;
   color: #000;
+  background-color: #0000004d;
 }
 
 .resourceCard__name {
@@ -22,20 +25,16 @@
   background-color: #fff;
   align-items: center;
 }
-/* .card__heart {
-  position: absolute;
-  top: 15px;
-  right: 5px;
-  margin: 0;
-  padding: 2px 12px 2px 12px;
-  gap: 8px;
-  border-radius: 4px;
-  opacity: 0px;
-  align-items: center;
+
+.resourceCard__address {
+  font-size: 12px;
+  flex-direction: column;
 }
 
-.card__image {
-  width: 100%;
-  border: 1px #000;
-  border-radius: 19px;
+/* .resourceCard_type {
+  font-size: 12px;
+} */
+/* 
+.resourceCard_distance {
+  font-size: 12px;
 } */

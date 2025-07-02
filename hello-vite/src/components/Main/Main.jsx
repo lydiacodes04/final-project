@@ -13,7 +13,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
             onChange={handleInputChange}
             placeholder="search for resources"
           ></input>
-          <button className="search_button" type="submit">
+          <button className="search_submit-button" type="submit">
             SEARCH
           </button>
         </form>
@@ -22,10 +22,10 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
           Search for resources near you. Imagine cards appearing here. there
           would be maybe 6 to start out with and then more if you click "show
           more"
-          <button>Show more</button>
+          <button className="search__more-button">Show more</button>
         </p>
       </section>
-      {/* <ItemCard singleResource={singleResource}></ItemCard> */}
+
       {resource.map((singleResource) => {
         return (
           <ItemCard singleResource={singleResource} key={singleResource.Name} />
