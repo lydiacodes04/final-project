@@ -6,7 +6,7 @@ import Main from "../Main/Main";
 // import ItemModal from "../ItemModal/ItemModal";
 import Footer from "../Footer/Footer";
 // import Profile from "../Profile/Profile";
-// import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+
 import { getYouthPrograms } from "../../utils/CareerOneStopApi.js";
 function App() {
   const [resource, setResourceData] = useState([]);

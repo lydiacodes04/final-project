@@ -5,3 +5,27 @@
   font-size: 18px;
   font-weight: 550;
 }
+
+.profile__title {
+  position: absolute;
+  top: 10px;
+  margin: 0;
+  padding: 2px 12px 2px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  opacity: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.profile__picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.profile__description {
+}

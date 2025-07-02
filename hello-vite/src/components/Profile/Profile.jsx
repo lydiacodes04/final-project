@@ -1,31 +1,13 @@
-import Sidebar from "../SideBar/SideBar";
-import ClothesSection from "../ClothesSection/ClothesSection";
 import "./Profile.css";
+import { Link } from "react-router-dom";
+import chicken from "../../assets/chicken.jpg";
 
-function Profile({
-  onCardClick,
-  clothingItems,
-  handleSignOut,
-  onCardLike,
-  handleEditModal,
-  handleAddClick,
-}) {
+function Profile({}) {
   return (
     <div className="profile">
-      <section className="profile__sidebar">
-        <Sidebar
-          handleSignOut={handleSignOut}
-          handleEditModal={handleEditModal}
-        />
-      </section>
-      <section className="profile__clothing-items">
-        <ClothesSection
-          onCardClick={onCardClick}
-          clothingItems={clothingItems}
-          onCardLike={onCardLike}
-          handleAddClick={handleAddClick}
-        />
-      </section>
+      <section className="profile__title"></section>
+      <section className="profile__picture" src={chicken}></section>
+      <section className="profile__description"></section>
     </div>
   );
 }
