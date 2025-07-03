@@ -12,8 +12,6 @@
   border-bottom: 1px solid #000;
 }
 
-.header__home {
-}
 .header__home-link {
   display: flex;
 }
@@ -24,7 +22,6 @@
 }
 .header__home-logo {
   margin-right: 8px;
-  /* margin-top: 12px; */
 }
 
 .header__controls {

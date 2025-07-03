@@ -1,15 +1,17 @@
 .profile {
   display: flex;
-  gap: 75px;
+  /* gap: 75px; */
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 18px;
   font-weight: 550;
+  max-width: 1360px;
+  max-height: 700px;
+  padding: 20px;
+  position: relative;
 }
 
 .profile__title {
-  position: absolute;
-  top: 10px;
-  margin: 0;
+  /* position: absolute; */
   padding: 2px 12px 2px 12px;
   gap: 8px;
   border-radius: 4px;
@@ -17,14 +19,14 @@
   font-weight: 500;
   font-size: 12px;
   background-color: #fff;
-  align-items: center;
 }
 
 .profile__picture {
-  height: 50px;
-  width: 50px;
+  position: absolute;
+  top: 54px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  margin: 0px;
 }
 
 .profile__description {

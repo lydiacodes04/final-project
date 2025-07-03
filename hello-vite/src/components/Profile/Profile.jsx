@@ -5,9 +5,18 @@ import chicken from "../../assets/chicken.jpg";
 function Profile({}) {
   return (
     <div className="profile">
-      <section className="profile__title"></section>
-      <section className="profile__picture" src={chicken}></section>
-      <section className="profile__description"></section>
+      <p className="profile__title">
+        Meet the Website Developer: Lydia Lockhart
+      </p>
+      <img
+        className="profile__picture"
+        src={chicken}
+        alt="photo of Lydia, website developer"
+      ></img>
+
+      <div className="profile__description">
+        This is where I put the description. Something about me. This is my bio.{" "}
+      </div>
     </div>
   );
 }
