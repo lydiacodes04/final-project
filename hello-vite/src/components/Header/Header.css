@@ -4,11 +4,27 @@
   justify-content: space-between;
   width: 100%;
   font-family: Cabinet Grotesk, sans-serif;
+  /* Inter Bold */
   font-size: 18px;
-  font-weight: 550;
+  font-weight: 500;
   line-height: 24px;
   text-align: left;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #000;
+}
+
+.header__home {
+}
+.header__home-link {
+  display: flex;
+}
+.header__home-text {
+  text-decoration: none;
+  flex-grow: 1;
+  color: #000;
+}
+.header__home-logo {
+  margin-right: 8px;
+  /* margin-top: 12px; */
 }
 
 .header__controls {
@@ -17,16 +33,15 @@
   justify-content: flex-end;
 }
 
-.header__home {
-  margin-right: 2px;
-}
-/* .header__home-logo {
-
-} */
-
 .header__about {
   display: flex;
   align-items: flex-start;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.header__about-link {
+  display: flex;
 }
 
 .header__about-text {
@@ -36,8 +51,8 @@
 }
 
 .header__about-avatar {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
-  margin-left: 10px;
+  margin-left: 12px;
 }

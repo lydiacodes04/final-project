@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 // import ItemModal from "../ItemModal/ItemModal";
 import Footer from "../Footer/Footer";
-// import Profile from "../Profile/Profile";
+import Profile from "../Profile/Profile";
 
 import { getYouthPrograms } from "../../utils/CareerOneStopApi.js";
 function App() {
@@ -60,14 +60,7 @@ function App() {
               />
             }
           />
-          {/* <Route
-            path="/profile"
-            element={
-              <Profile
-                onCardClick={handleCardClick}
-              />
-            }
-          /> */}
+          <Route path="/profile" element={<Profile />} />
         </Routes>
 
         <Footer />

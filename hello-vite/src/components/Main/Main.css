@@ -1,15 +1,15 @@
-.search_fieldset {
+.search__fieldset {
   /* border-radius: 5%; */
   width: 608;
   height: 64;
   top: 432px;
   left: 416px;
-  border: 1px solid #d1d2d6;
+  border: 1px solid #000;
   /* background-color: #0000004d; */
 }
-.search_submit-button {
-  border-radius: solid, #000, 1px;
-  color: #d1d2d6;
+.search__submit-button {
+  border: 1px, solid, #000;
+  color: #000;
 }
 
 .search__text {
@@ -21,11 +21,11 @@
   color: #000;
   background-color: skyblue;
 }
-.search_more-button {
+.search__more-button {
   position: relative;
   align-self: flex-end;
-  border-radius: solid, #000, 1px;
-  color: #d1d2d6;
+  border: 2px solid #000;
+  color: #000;
 }
 
 .cards__list {

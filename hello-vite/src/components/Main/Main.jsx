@@ -5,15 +5,15 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
   return (
     <main>
       <section className="search">
-        <form action="" className="search_bar" onSubmit={onZipSubmit}>
+        <form action="" className="search__bar" onSubmit={onZipSubmit}>
           <input
-            className="search_fieldset"
+            className="search__fieldset"
             type="text"
             value={inputValue}
             onChange={handleInputChange}
             placeholder="search for resources"
           ></input>
-          <button className="search_submit-button" type="submit">
+          <button className="search__submit-button" type="submit">
             SEARCH
           </button>
         </form>
@@ -21,7 +21,8 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
         <p className="search__text">
           Search for resources near you. The cards below show resources in the
           zipcode you searched. There will be a maximum of 6 to start out with
-          and then more if you click "show more."
+          and then more if you click "show more." For example, try zipcodes
+          99504 (Anchorage, AK), 78207 (San Antonio, TX), or
           {/* Search for resources near you. Imagine cards appearing here. there
           would be maybe 6 to start out with and then more if you click "show
           more" */}
