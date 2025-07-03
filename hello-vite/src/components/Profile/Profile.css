@@ -1,6 +1,5 @@
 .profile {
   display: flex;
-  /* gap: 75px; */
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 18px;
   font-weight: 550;
@@ -11,7 +10,6 @@
 }
 
 .profile__title {
-  /* position: absolute; */
   padding: 2px 12px 2px 12px;
   gap: 8px;
   border-radius: 4px;
@@ -32,8 +30,6 @@
 .profile__description {
   width: 323px;
   height: 200px;
-  /* max-width: 323px;
-  max-height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
