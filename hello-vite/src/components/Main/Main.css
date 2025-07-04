@@ -16,9 +16,24 @@
   gap: 21px;
 }
 
-/* .search__more-button {
-  position: relative;
-  align-self: flex-end;
-  border: 2px solid #000;
-  color: #000;
-} */
+@media screen and (max-width: 375px) {
+  .page {
+    width: 100vw;
+    height: 100vh;
+  }
+  .page__content {
+    margin: 0;
+    padding: 0 24px;
+    height: 90vh;
+    width: 90vw;
+    height: 30vh;
+  }
+  .search {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .search_results {
+    flex-direction: row;
+  }
+}

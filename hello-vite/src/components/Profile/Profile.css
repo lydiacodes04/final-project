@@ -2,18 +2,22 @@
   display: flex;
   flex-direction: column;
   font-family: Cabinet Grotesk, sans-serif;
-  font-size: 18px;
-  font-weight: 550;
   width: 94vw;
   max-height: 700px;
   padding: 20px;
 }
 
 .profile__title {
+  font-size: 24px;
+  font-weight: 500;
   gap: 8px;
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 24px;
+}
+
+.profile__description {
+  display: flex;
+  font-family: Cabinet Grotesk, sans-serif;
+  border-radius: 5%;
 }
 
 .profile__picture {
@@ -22,17 +26,52 @@
   width: 250px;
   border-radius: 50%;
 }
-
-.profile__description {
-  width: 323px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Cabinet Grotesk, sans-serif;
-  color: #000;
-  background-color: #0000004d;
-  margin: 20px;
-  padding: 2px 12px 2px 12px;
+.profile__bio {
+  width: 340px;
+  height: 220px;
   border-radius: 5%;
+  padding: 16px;
+  margin: 16px;
+  color: #000;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .page {
+    width: 100%;
+    height: 108vh;
+  }
+  .page__content {
+    margin: 0;
+    padding: 0 24px;
+    height: 90vh;
+  }
+
+  .profile {
+    padding: 0px;
+  }
+  .profile__title {
+    margin: 12px 8px;
+  }
+  .profile__description {
+    flex-direction: column;
+  }
+
+  .profile__picture {
+    align-self: center;
+    height: 220px;
+    width: 220px;
+  }
+
+  .profile__bio {
+    width: 84vw;
+    height: 30vh;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 12px 24px;
+  }
+  .footer {
+    margin: 0px;
+    padding: 0px;
+  }
 }
