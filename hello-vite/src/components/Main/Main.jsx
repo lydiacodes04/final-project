@@ -1,6 +1,7 @@
 import "./Main.css";
 import ItemCard from "../ItemCard/ItemCard";
 import SearchForm from "../SearchForm/SearchForm";
+import Preloader from "../Preloader/Preloader";
 
 function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
   return (
@@ -19,6 +20,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
         handleInputChange={handleInputChange}
         inputValue={inputValue}
       />
+      <Preloader />
       <div className="search_results">
         {resource.map((singleResource) => {
           return (

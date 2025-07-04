@@ -13,8 +13,3 @@ function ItemCard({ singleResource }) {
 }
 
 export default ItemCard;
-
-// removed, as it wasn't showing:
-// {singleResource.StateAbbrev}
-// {singleResource.Address2}
-// {singleResource.Distance}
