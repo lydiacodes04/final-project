@@ -5,15 +5,14 @@
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  /* max-width: 1360px;
-  max-height: 700px; */
 }
 .page__content {
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0 24px;
   height: 90vh;
 }
 
-/* alt= "San Antonio Skyline by Matthew Lejune"; */
-/* Background photo credit <a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+/* Background photo credit  "San Antonio Skyline by Matthew Lejune" 
+<a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> 
+on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
      */

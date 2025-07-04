@@ -19,11 +19,16 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
         handleInputChange={handleInputChange}
         inputValue={inputValue}
       />
-      {resource.map((singleResource) => {
-        return (
-          <ItemCard singleResource={singleResource} key={singleResource.Name} />
-        );
-      })}
+      <div className="search_results">
+        {resource.map((singleResource) => {
+          return (
+            <ItemCard
+              singleResource={singleResource}
+              key={singleResource.Name}
+            />
+          );
+        })}
+      </div>
       <button className="search__more-button">Show more</button>
     </main>
   );
