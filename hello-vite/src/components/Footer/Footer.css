@@ -20,3 +20,10 @@
   text-align: right;
   margin-right: 20px;
 }
+
+@media screen and (max-width: 440px) {
+  .footer {
+    margin: 0px;
+    padding: 0px;
+  }
+}

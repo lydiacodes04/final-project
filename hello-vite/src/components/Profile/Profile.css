@@ -12,11 +12,14 @@
   font-weight: 500;
   gap: 8px;
   border-radius: 4px;
+  font-family: "Inter Bold", Arial, sans-serif;
+  font-weight: 700;
 }
 
 .profile__description {
   display: flex;
-  font-family: Cabinet Grotesk, sans-serif;
+  font-family: "Inter Regular", Arial, sans-serif;
+  font-weight: normal;
   border-radius: 5%;
 }
 
@@ -32,23 +35,17 @@
   border-radius: 5%;
   padding: 16px;
   margin: 16px;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #0000008d;
+
+  /* color: #000;
+  background-color: #a8a5a5; */
 }
 
 @media screen and (max-width: 440px) {
-  .page {
-    width: 100%;
-    height: 108vh;
-  }
-  .page__content {
-    margin: 0;
-    padding: 0 24px;
-    max-height: 100vh;
-  }
-
   .profile {
     padding: 0px;
+    align-items: center;
   }
   .profile__title {
     margin: 12px 8px;
@@ -72,9 +69,5 @@
     font-size: 14px;
     padding: 4px 10px;
     margin: 12px 24px;
-  }
-  .footer {
-    margin: 0px;
-    padding: 0px;
   }
 }

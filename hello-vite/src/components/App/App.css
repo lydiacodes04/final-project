@@ -1,4 +1,6 @@
 .page {
+  font-family: "Inter Bold", Arial, sans-serif;
+  font-weight: 700;
   background-image: url("../../images/skyline.jpg");
   background-size: cover;
   background-position: center;
@@ -8,7 +10,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "Inter Bold", Arial, sans-serif;
 }
 .page__content {
   margin: 0;
@@ -20,3 +21,17 @@
 <a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> 
 on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
      */
+
+@media screen and (max-width: 440px) {
+  .page {
+    width: 100vw;
+    height: 120vh;
+  }
+  .page__content {
+    margin: 0;
+    padding: 4px 16px;
+  }
+}
+
+/* max-height: 1024px;
+    max-width: 1440px; */

@@ -1,11 +1,21 @@
+.search__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search__fieldset {
-  width: 608;
-  height: 64;
-  top: 432px;
-  left: 416px;
+  width: 200px;
+  height: 24px;
   border: 1px solid #000;
+  opacity: 1;
+  border-radius: 30px;
+  border-width: 1px;
 }
 .search__submit-button {
   border: 1px, solid, #000;
+  border-radius: 100px;
   color: #000;
+  font-family: "Inter Bold", Arial, sans-serif;
+  font-weight: 700;
 }
