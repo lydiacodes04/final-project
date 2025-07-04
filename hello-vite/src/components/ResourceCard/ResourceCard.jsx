@@ -1,6 +1,6 @@
-import "./ItemCard.css";
+import "./ResourceCard.css";
 
-function ItemCard({ singleResource }) {
+function ResourceCard({ singleResource }) {
   return (
     <li className="resourceCard">
       <h2 className="resourceCard__name">{singleResource.Name}</h2>
@@ -12,4 +12,4 @@ function ItemCard({ singleResource }) {
   );
 }
 
-export default ItemCard;
+export default ResourceCard;

@@ -1,5 +1,5 @@
 import "./Main.css";
-import ItemCard from "../ItemCard/ItemCard";
+import ResourceCard from "../ResourceCard/ResourceCard";
 import SearchForm from "../SearchForm/SearchForm";
 import Preloader from "../Preloader/Preloader";
 
@@ -24,7 +24,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
       <div className="search_results">
         {resource.map((singleResource) => {
           return (
-            <ItemCard
+            <ResourceCard
               singleResource={singleResource}
               key={singleResource.Name}
             />
