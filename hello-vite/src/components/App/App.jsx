@@ -6,7 +6,6 @@ import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import Profile from "../Profile/Profile";
 import { getYouthPrograms } from "../../utils/CareerOneStopApi.js";
-import Preloader from "../Preloader/Preloader.jsx";
 
 function App() {
   const [resource, setResourceData] = useState([]);
