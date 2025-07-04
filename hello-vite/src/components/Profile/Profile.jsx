@@ -1,6 +1,6 @@
 import "./Profile.css";
 import { Link } from "react-router-dom";
-import chicken from "../../assets/chicken.jpg";
+import chicken from "../../images/chicken.jpg";
 
 function Profile({}) {
   return (

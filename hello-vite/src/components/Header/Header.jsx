@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import chicken from "../../assets/chicken.jpg";
-import Home from "../../assets/Home.svg";
+import chicken from "../../images/chicken.jpg";
+import Home from "../../images/Home.svg";
 import "./Header.css";
 
 function Header() {
