@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import chicken from "../../assets/chicken.jpg";
 import Home from "../../assets/Home.svg";
 import "./Header.css";
-import { Routes, Route } from "react-router-dom";
 
 function Header() {
   return (

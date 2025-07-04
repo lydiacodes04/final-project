@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import Profile from "../Profile/Profile";
-
 import { getYouthPrograms } from "../../utils/CareerOneStopApi.js";
+
 function App() {
   const [resource, setResourceData] = useState([]);
 
