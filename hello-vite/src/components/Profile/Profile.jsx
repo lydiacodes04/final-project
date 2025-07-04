@@ -12,7 +12,7 @@ function Profile({}) {
       <img
         className="profile__picture"
         src={chicken}
-        alt="photo of Lydia, website developer"
+        alt="photo of Lydia, website creator, holding a chicken"
       />
       <div className="profile__description">
         This is where I put the description. Something about me. This is my bio.
