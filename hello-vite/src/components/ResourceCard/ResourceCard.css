@@ -26,6 +26,7 @@
   background-color: #fff;
   align-items: center;
   color: #000;
+  /* max-width: 10px; */
 }
 
 .resourceCard__type {
@@ -38,4 +39,26 @@
   position: absolute;
   top: 50px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 440px) {
+  .resourceCard {
+    width: 240px;
+    height: 200px;
+    padding: 12px;
+    margin: 12px 24px;
+    align-items: center;
+  }
+  .resourceCard__name {
+    width: 50vw;
+    text-align: center;
+  }
+  .resourceCard__type {
+    margin-top: 24px;
+  }
+  .resourceCard__address {
+    margin-left: 20px;
+    margin-top: 24px;
+    text-align: center;
+  }
 }
