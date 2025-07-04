@@ -16,29 +16,12 @@ function checkResponse(res) {
 }
 export { checkResponse };
 
-// function getYouthPrograms(zipcode) {
-//   return fetch(`${baseUrl}&location=${zipcode}`, {
-//     headers: getHeaders(),
-//   }).then(checkResponse);
-// }
-
 function getYouthPrograms(zipcode) {
   const fullUrl = `${baseUrl}&location=${zipcode}`;
-  console.log("API URL:", fullUrl); // Add this line
+  console.log("API URL:", fullUrl);
   return fetch(fullUrl, {
     headers: getHeaders(),
   }).then(checkResponse);
 }
 
 export { getYouthPrograms };
-
-//`${baseUrl}&location=${zipcode}&APIToken=${encodeURIComponent(APIToken)}`
-
-// export const filterProgramData = (data) => {
-//   //   const result = {};
-//   //   result.zipcode = data.zipcode;
-//   if ((data.city = "San Antonio")) {
-//     return data;
-//   }
-//   return "not found";
-// };
