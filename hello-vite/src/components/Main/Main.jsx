@@ -1,5 +1,6 @@
 import "./Main.css";
 import ItemCard from "../ItemCard/ItemCard";
+import SearchForm from "../SearchForm/SearchForm";
 
 function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
   return (
