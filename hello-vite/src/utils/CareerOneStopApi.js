@@ -14,7 +14,6 @@ function checkResponse(res) {
   }
   return Promise.reject(`Error: ${res.status}`);
 }
-export { checkResponse };
 
 function getYouthPrograms(zipcode) {
   const fullUrl = `${baseUrl}&location=${zipcode}`;

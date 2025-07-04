@@ -31,7 +31,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
           );
         })}
       </div>
-      <button className="search__more-button">Show more</button>
+      {/* <button className="search__more-button">Show more</button> */}
     </main>
   );
 }

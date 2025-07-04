@@ -5,13 +5,7 @@
   line-height: 24px;
   text-align: left;
   color: #000;
-  background-color: skyblue;
-}
-.search__more-button {
-  position: relative;
-  align-self: flex-end;
-  border: 2px solid #000;
-  color: #000;
+  /* background-color: skyblue; */
 }
 
 .search_results {
@@ -21,3 +15,10 @@
   list-style-type: none;
   gap: 21px;
 }
+
+/* .search__more-button {
+  position: relative;
+  align-self: flex-end;
+  border: 2px solid #000;
+  color: #000;
+} */

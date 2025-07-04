@@ -12,6 +12,11 @@
   bottom: 0;
   margin: auto;
   animation: spin 0.75s infinite linear;
+  visibility: hidden;
+}
+
+.circle-preloader-visible {
+  visibility: visible;
 }
 
 @keyframes spin {
