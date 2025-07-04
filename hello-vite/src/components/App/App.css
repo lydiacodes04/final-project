@@ -1,5 +1,5 @@
 .page {
-  background-image: url("../../assets/skyline.jpg");
+  background-image: url("../../images/skyline.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Inter Bold", Arial, sans-serif;
 }
 .page__content {
   margin: 0;
