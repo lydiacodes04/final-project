@@ -12,12 +12,14 @@
   bottom: 0;
   margin: auto;
   animation: spin 0.75s infinite linear;
-  visibility: hidden;
 }
 
-.circle-preloader-visible {
-  visibility: visible;
+/* .circle_preloader-loading {
+  visibility: hidden;
 }
+.circle_preloader-nothing {
+  visibility: hidden;
+} */
 
 @keyframes spin {
   100% {
