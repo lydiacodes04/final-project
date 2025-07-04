@@ -1,15 +1,23 @@
+.resourceCards {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 21px;
+}
+
 .resourceCard {
   position: relative;
   width: 323px;
   height: 200px;
-  /* max-width: 323px;
-  max-height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Cabinet Grotesk, sans-serif;
-  color: #000;
-  background-color: #0000004d;
+  color: #fff;
+  background-color: #0000008d;
   margin: 20px;
   padding: 2px 12px 2px 12px;
   border-radius: 5%;
@@ -27,6 +35,7 @@
   font-size: 12px;
   background-color: #fff;
   align-items: center;
+  color: #000;
 }
 
 .resourceCard__type {

@@ -1,27 +1,23 @@
 .profile {
   display: flex;
+  flex-direction: column;
   font-family: Cabinet Grotesk, sans-serif;
   font-size: 18px;
   font-weight: 550;
-  max-width: 1360px;
+  width: 94vw;
   max-height: 700px;
   padding: 20px;
-  position: relative;
 }
 
 .profile__title {
-  padding: 2px 12px 2px 12px;
   gap: 8px;
   border-radius: 4px;
-  opacity: 0px;
   font-weight: 500;
-  font-size: 12px;
-  background-color: #fff;
+  font-size: 24px;
 }
 
 .profile__picture {
-  position: absolute;
-  top: 54px;
+  justify-self: flex-end;
   height: 250px;
   width: 250px;
   border-radius: 50%;

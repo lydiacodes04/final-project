@@ -10,7 +10,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
           Search for resources near you. The cards below show resources in the
           zipcode you searched. There will be a maximum of 6 to start out with
           and then more if you click "show more." For example, try zipcodes
-          99504 (Anchorage, AK), 78207 (San Antonio, TX), or 95403 (Santa Rosa,
+          99504 (Anchorage, AK), 78205 (San Antonio, TX), or 95403 (Santa Rosa,
           California).
         </p>
       </section>

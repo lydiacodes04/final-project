@@ -1,11 +1,9 @@
 .search__fieldset {
-  /* border-radius: 5%; */
   width: 608;
   height: 64;
   top: 432px;
   left: 416px;
   border: 1px solid #000;
-  /* background-color: #0000004d; */
 }
 .search__submit-button {
   border: 1px, solid, #000;

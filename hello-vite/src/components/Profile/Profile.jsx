@@ -1,6 +1,7 @@
 import "./Profile.css";
 import { Link } from "react-router-dom";
 import chicken from "../../assets/chicken.jpg";
+import github from "../../assets/github.svg";
 
 function Profile({}) {
   return (
@@ -12,10 +13,14 @@ function Profile({}) {
         className="profile__picture"
         src={chicken}
         alt="photo of Lydia, website developer"
-      ></img>
-
+      />
       <div className="profile__description">
-        This is where I put the description. Something about me. This is my bio.{" "}
+        This is where I put the description. Something about me. This is my bio.
+        <img
+          className="profile__description-github"
+          src={github}
+          alt="github icon"
+        />
       </div>
     </div>
   );

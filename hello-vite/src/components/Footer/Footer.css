@@ -3,6 +3,10 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  background-color: #0000008d;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 .footer__content {
   display: flex;

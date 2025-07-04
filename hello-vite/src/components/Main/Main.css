@@ -13,12 +13,3 @@
   border: 2px solid #000;
   color: #000;
 }
-
-.cards__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  gap: 21px;
-}
