@@ -8,7 +8,7 @@ function SearchForm({ onZipSubmit, handleInputChange, inputValue }) {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="search for resources"
+        placeholder="search by zipcode"
       ></input>
       <button className="search__submit-button" type="submit">
         SEARCH
