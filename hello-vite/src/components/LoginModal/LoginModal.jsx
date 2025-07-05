@@ -1,3 +1,4 @@
+//THIS COMPONENT IS NOT CURRENTLY BEING USED, BUT IT IS PREPARED AND READY FOR FUTURE USE
 import React, { useState } from "react";
 import "./LoginModal.css";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";

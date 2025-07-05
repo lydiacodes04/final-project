@@ -15,7 +15,7 @@ function Preloader({ loading, nothingFound }) {
       >
         Loading resources...
       </div>
-      {/* <div className={"circle-preloader__loading"}>Loading resources...</div> */}
+
       <div
         className={
           nothingFound

@@ -42,7 +42,12 @@ function App() {
         handleNothingFoundStatus(result);
         setLoadingStatus(false);
       })
-      .catch((err) => console.error("Error setting data:", err));
+      .catch((err) =>
+        console.error(
+          "Sorry, something went wrong during the request. There may be a connection issue or the server may be down. Please try again later.",
+          err
+        )
+      );
   };
 
   return (

@@ -1,3 +1,5 @@
+//THIS COMPONENT IS NOT CURRENTLY BEING USED, BUT IT IS PREPARED AND READY FOR FUTURE USE
+
 import "./ItemModal.css";
 import close from "../../assets/close_icon.svg";
 
