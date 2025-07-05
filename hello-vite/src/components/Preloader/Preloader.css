@@ -1,3 +1,6 @@
+.circle {
+  position: relative;
+}
 .circle-preloader {
   display: block;
   width: 50px;
@@ -13,6 +16,19 @@
   margin: auto;
   animation: spin 0.75s infinite linear;
 }
+
+.circle-preloader__loading {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+}
+/* .circle-preloader__nothing {
+  position: absolute;
+  top: 0;
+  left: 2;
+  right: 0;
+  bottom: 2;
+} */
 
 /* .circle_preloader-loading {
   visibility: hidden;

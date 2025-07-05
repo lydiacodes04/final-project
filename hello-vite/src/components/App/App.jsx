@@ -21,7 +21,6 @@ function App() {
     console.log("Searching for zip:", inputValue);
     getYouthPrograms(inputValue)
       .then((data) => {
-        console.log(data.YouthProgramList.length);
         const result = data.YouthProgramList.filter(
           (program) => program.Zip === inputValue
         );
