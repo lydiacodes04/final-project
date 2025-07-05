@@ -12,6 +12,9 @@
 .header__home-link {
   display: flex;
 }
+.header__home-link :hover {
+  color: #2f71e5;
+}
 .header__home-text {
   text-decoration: none;
   flex-grow: 1;
@@ -21,6 +24,10 @@
 }
 .header__home-logo {
   margin-right: 8px;
+}
+.header__home-logo:hover {
+  background-color: #2f71e5;
+  border-radius: 10px;
 }
 
 .header__controls {
