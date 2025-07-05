@@ -3,13 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "homepage": "https://lydiacodes04.github.io/final-project/",
+  "homepage": "https://lydiacodes04.github.io/final-project/",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
