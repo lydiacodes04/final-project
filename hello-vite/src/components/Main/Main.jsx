@@ -38,7 +38,6 @@ function Main({
           );
         })}
       </div>
-      {/* <button className="search__more-button">Show more</button> */}
     </main>
   );
 }

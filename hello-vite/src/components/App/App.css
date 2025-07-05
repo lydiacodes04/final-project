@@ -17,11 +17,6 @@
   height: 90vh;
 }
 
-/* Background photo credit  "San Antonio Skyline by Matthew Lejune" 
-<a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> 
-on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-     */
-
 @media screen and (max-width: 440px) {
   .page {
     width: 100vw;
@@ -33,5 +28,7 @@ on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrew
   }
 }
 
-/* max-height: 1024px;
-    max-width: 1440px; */
+/* Background photo credit  "San Antonio Skyline by Matthew Lejune" 
+<a href="https://unsplash.com/@matthewlejune?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew LeJune</a> 
+on <a href="https://unsplash.com/photos/aerial-view-of-white-building-IpvDhQjrewM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+     */
