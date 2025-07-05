@@ -12,20 +12,35 @@ function App() {
 
   const [inputValue, setInputValue] = useState("");
 
+  const [loadingStatus, setLoadingStatus] = useState(false);
+
+  const [nothingFoundStatus, setNothingFoundStatus] = useState(false);
+
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
 
+  function handleNothingFoundStatus(result) {
+    const number = result.length;
+    if (number === 0) {
+      return setNothingFoundStatus(true);
+    }
+    return setNothingFoundStatus(false);
+  }
+
   const onZipSubmit = (e) => {
     e.preventDefault();
     console.log("Searching for zip:", inputValue);
+    setLoadingStatus(true);
     getYouthPrograms(inputValue)
       .then((data) => {
         const result = data.YouthProgramList.filter(
           (program) => program.Zip === inputValue
         );
-        setResourceData(result);
         console.log(result);
+        setResourceData(result);
+        handleNothingFoundStatus(result);
+        setLoadingStatus(false);
       })
       .catch((err) => console.error("Error setting data:", err));
   };
@@ -42,6 +57,8 @@ function App() {
                 resource={resource}
                 onZipSubmit={onZipSubmit}
                 handleInputChange={handleInputChange}
+                loadingStatus={loadingStatus}
+                nothingFoundStatus={nothingFoundStatus}
               />
             }
           />

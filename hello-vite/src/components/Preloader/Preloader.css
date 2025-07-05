@@ -1,5 +1,7 @@
 .circle {
   position: relative;
+  top: 50px;
+  right: 16px;
 }
 .circle-preloader {
   display: block;
@@ -17,25 +19,36 @@
   animation: spin 0.75s infinite linear;
 }
 
+.circle-preloader__hidden {
+  visibility: hidden;
+}
+
 .circle-preloader__loading {
   position: absolute;
-  top: 80%;
-  left: 40%;
+  top: 200%;
+  left: 30%;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  border-radius: 30px;
 }
-/* .circle-preloader__nothing {
-  position: absolute;
-  top: 0;
-  left: 2;
-  right: 0;
-  bottom: 2;
-} */
+.circle-preloader__loading-hidden {
+  visibility: hidden;
+}
 
-/* .circle_preloader-loading {
+.circle-preloader__nothing {
+  position: absolute;
+  top: 200%;
+  left: 30%;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  border-radius: 30px;
+}
+
+.circle-preloader__nothing-hidden {
   visibility: hidden;
 }
-.circle_preloader-nothing {
-  visibility: hidden;
-} */
 
 @keyframes spin {
   100% {

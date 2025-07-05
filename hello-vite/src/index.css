@@ -70,7 +70,7 @@ button:focus-visible {
 @font-face {
   font-family: "Inter Bold";
   src: local("Inter Bold"),
-    url("./fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    url("./fonts/Inter_18pt-Black.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

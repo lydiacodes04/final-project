@@ -3,7 +3,14 @@ import ResourceCard from "../ResourceCard/ResourceCard";
 import SearchForm from "../SearchForm/SearchForm";
 import Preloader from "../Preloader/Preloader";
 
-function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
+function Main({
+  resource,
+  onZipSubmit,
+  handleInputChange,
+  inputValue,
+  loadingStatus,
+  nothingFoundStatus,
+}) {
   return (
     <main>
       <section className="search">
@@ -20,7 +27,7 @@ function Main({ resource, onZipSubmit, handleInputChange, inputValue }) {
         handleInputChange={handleInputChange}
         inputValue={inputValue}
       />
-      <Preloader />
+      <Preloader loading={loadingStatus} nothingFound={nothingFoundStatus} />
       <div className="search_results">
         {resource.map((singleResource) => {
           return (
