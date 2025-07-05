@@ -28,14 +28,6 @@ function App() {
     return setNothingFoundStatus(false);
   }
 
-  function handleImproperSubmit(inputValue) {
-    const number = inputValue.length;
-    if (number === 0) {
-      return setNothingFoundStatus(true);
-    }
-    return result;
-  }
-
   const onZipSubmit = (e) => {
     e.preventDefault();
     console.log("Searching for zip:", inputValue);
