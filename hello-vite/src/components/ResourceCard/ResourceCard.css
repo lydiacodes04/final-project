@@ -1,0 +1,63 @@
+.resourceCard {
+  position: relative;
+  width: 323px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cabinet Grotesk, sans-serif;
+  color: #fff;
+  background-color: #0000008d;
+  margin: 20px;
+  padding: 2px 12px 2px 12px;
+  border-radius: 5%;
+}
+
+.resourceCard__name {
+  position: absolute;
+  top: 10px;
+  margin: 0;
+  padding: 2px 12px 2px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  opacity: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #fff;
+  align-items: center;
+  color: #000;
+}
+
+.resourceCard__type {
+  position: absolute;
+  top: 30px;
+  font-size: 12px;
+}
+
+.resourceCard__address {
+  position: absolute;
+  top: 50px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 440px) {
+  .resourceCard {
+    width: 240px;
+    height: 200px;
+    padding: 12px;
+    margin: 12px 24px;
+    align-items: center;
+  }
+  .resourceCard__name {
+    width: 50vw;
+    text-align: center;
+  }
+  .resourceCard__type {
+    margin-top: 24px;
+  }
+  .resourceCard__address {
+    margin-left: 20px;
+    margin-top: 24px;
+    text-align: center;
+  }
+}

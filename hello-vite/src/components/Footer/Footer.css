@@ -1,0 +1,29 @@
+.footer {
+  font-family: Cabinet Grotesk, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  margin: 0px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content-name {
+  list-style-type: none;
+  text-align: left;
+}
+
+.footer__content-year {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 440px) {
+  .footer {
+    margin: 0px;
+    padding: 0px;
+  }
+}
